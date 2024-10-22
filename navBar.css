@@ -1,0 +1,85 @@
+.site-nav-div {
+    width: 100%;
+    align-content: center;
+}
+
+.site-nav-bar {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav-bar button {
+    border: none;
+    display: list-item;
+    float: left;
+    text-align: center;
+    width: 16.6666666%;
+    background: #a379c9;
+}
+
+#home {
+    background: #06b1eb;
+}
+
+.site-nav-bar li>h3 {
+    padding: 0;
+    overflow: scroll;
+    color: #143642;
+}
+
+.site-nav-bar button:hover {
+    background: #06b1eb;
+}
+
+.social-nav-div {
+    /* width: 100%; */
+    align-content: center;
+    padding: 1%;
+}
+
+.social-nav {
+    width: 50%;
+    padding: 0 25%;
+}
+
+.social-nav-bar {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.social-nav-bar>li {
+    display: list-item;
+    float: left;
+    text-align: center;
+    width: 25%;
+    background: inherit;
+}
+
+.social-nav-bar>li>a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    align-content: center;
+}
+
+#github>a>img {
+    width: 30px;
+}
+
+#linked-in>a>img {
+    width: 30px;
+}
+
+#instagram>a>img {
+    width: 30px;
+}
+
+#email>a>img {
+    width: 30px;
+}

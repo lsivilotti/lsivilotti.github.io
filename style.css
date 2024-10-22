@@ -1,99 +1,77 @@
-.site-nav-div {
-    width: 100%;
-    align-content: center;
-}
-
-.site-nav-bar {
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
-}
-
-.site-nav-bar>a>li {
-    display: list-item;
-    float: left;
-    text-align: center;
-    width: 16.6666666%;
-    background: #a379c9;
-}
-
-.site-nav-bar>a>li>h3 {
-    padding: 0;
-    overflow: scroll;
-}
-
-.site-nav-bar>a {
-    text-decoration: none;
-    color: #143642;
-}
-
-.site-nav-bar>a:visited {
-    color: #143642;
-}
-
-.site-nav-bar>a>li:hover,
-#current {
-    background: #06b1eb;
-}
-
-.social-nav-div {
-    /* width: 100%; */
-    align-content: center;
-    padding: 1%;
-}
-
-.social-nav {
-    width: 50%;
-    padding: 0 25%;
-}
-
-.social-nav-bar {
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
-}
-
-.social-nav-bar>li {
-    display: list-item;
-    float: left;
-    text-align: center;
-    width: 25%;
-    background: inherit;
-}
-
-.social-nav-bar>li>a {
-    text-decoration: none;
-}
-
-header {
-    text-align: center;
-    align-content: center;
-}
-
-#github>a>img {
-    width: 30px;
-}
-
-#linked-in>a>img {
-    width: 30px;
-}
-
-#instagram>a>img {
-    width: 30px;
-}
-
-#email>a>img {
-    width: 30px;
-}
-
-footer a {
-    color: #0a8754;
-}
-
 body {
     background-attachment: fixed;
     background-image: linear-gradient(#f9f5e3, white, #f9f5e3);
     color: #143642;
+    align-content: center;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+#home-content {
+    /* width: 100%; */
+    display: block;
+    align-content: center;
+    padding: 5%;
+}
+
+#experience-content {
+    /* width: 100%; */
+    display: none;
+    align-content: center;
+    padding: 5%;
+}
+
+#education-content {
+    /* width: 100%; */
+    display: none;
+    align-content: center;
+    padding: 5%;
+}
+
+#projects-content {
+    /* width: 100%; */
+    display: none;
+    align-content: center;
+    padding: 5%;
+}
+
+#awards-content {
+    /* width: 100%; */
+    display: none;
+    align-content: center;
+    padding: 5%;
+}
+
+#certifications-content {
+    /* width: 100%; */
+    display: none;
+    align-content: center;
+    padding: 5%;
+}
+
+.greeting {
+    /* padding: 2%; */
+    text-align: justify;
+}
+
+.personal-pic-div {
+    width: 25%;
+    float: left;
+    padding: 0 2% 0 0;
+}
+
+.personal-pic {
+    width: 100%;
+    min-width: 50px;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer a {
+    color: #0a8754;
 }
