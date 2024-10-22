@@ -10,29 +10,30 @@
     padding: 0;
 }
 
-.site-nav-bar > a  > li {
+.site-nav-bar>a>li {
     display: list-item;
     float: left;
     text-align: center;
     width: 16.6666666%;
-    background: #807182;
+    background: #a379c9;
 }
 
-.site-nav-bar > a > li > h3 {
+.site-nav-bar>a>li>h3 {
     padding: 0;
     overflow: scroll;
 }
 
-.site-nav-bar > a {
+.site-nav-bar>a {
     text-decoration: none;
     color: #143642;
 }
 
-.site-nav-bar > a:visited {
+.site-nav-bar>a:visited {
     color: #143642;
 }
 
-.site-nav-bar > a > li:hover, #current {
+.site-nav-bar>a>li:hover,
+#current {
     background: #06b1eb;
 }
 
@@ -54,7 +55,7 @@
     padding: 0;
 }
 
-.social-nav-bar > li {
+.social-nav-bar>li {
     display: list-item;
     float: left;
     text-align: center;
@@ -62,7 +63,7 @@
     background: inherit;
 }
 
-.social-nav-bar > li > a {
+.social-nav-bar>li>a {
     text-decoration: none;
 }
 
@@ -71,19 +72,19 @@ header {
     align-content: center;
 }
 
-#github > a > img {
+#github>a>img {
     width: 30px;
 }
 
-#linked-in > a > img {
+#linked-in>a>img {
     width: 30px;
 }
 
-#instagram > a > img {
+#instagram>a>img {
     width: 30px;
 }
 
-#email > a > img {
+#email>a>img {
     width: 30px;
 }
 
@@ -91,7 +92,7 @@ footer a {
     color: #0a8754;
 }
 
-body{
+body {
     background-attachment: fixed;
     background-image: linear-gradient(#f9f5e3, white, #f9f5e3);
     color: #143642;
