@@ -19,17 +19,14 @@
     background: #a379c9;
 }
 
-#home {
-    background: #06b1eb;
-}
-
 .site-nav-bar li>h3 {
     padding: 0;
     overflow: scroll;
     color: #143642;
 }
 
-.site-nav-bar button:hover {
+.site-nav-bar button:hover,
+.site-nav-bar button.active {
     background: #06b1eb;
 }
 

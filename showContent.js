@@ -1,6 +1,7 @@
 const d = document;
 
 var home = d.getElementById("home");
+home.classList.toggle("active");
 var exp = d.getElementById("experience");
 var ed = d.getElementById("education");
 var proj = d.getElementById("projects");
@@ -13,47 +14,50 @@ var contents = d.getElementsByClassName("contents");
 function hideAll() {
     for (var i = 0; i < contents.length; i++) {
         contents[i].style.display = "none";
-        buttons[i].style.background = "#a379c9";
+        if(buttons[i].classList.contains("active")){
+            buttons[i].classList.toggle("active");
+        }
     }
-}
-
-function displayAndBackground(button, content) {
-    content.style.display = "block";
-    button.style.background = "#06b1eb";
 }
 
 home.addEventListener("click", function () {
     hideAll();
     var current = d.getElementById("home-content");
-    displayAndBackground(this, current);
+    current.style.display = "block";
+    this.classList.toggle("active");
 });
 
 exp.addEventListener("click", function () {
     hideAll();
     var current = d.getElementById("experience-content");
-    displayAndBackground(this, current);
+    current.style.display = "block";
+    this.classList.toggle("active");
 });
 
 ed.addEventListener("click", function () {
     hideAll();
     var current = d.getElementById("education-content");
-    displayAndBackground(this, current);
+    current.style.display = "block";
+    this.classList.toggle("active");
 });
 
 proj.addEventListener("click", function () {
     hideAll();
     var current = d.getElementById("projects-content");
-    displayAndBackground(this, current);
+    current.style.display = "block";
+    this.classList.toggle("active");
 });
 
 awards.addEventListener("click", function () {
     hideAll();
     var current = d.getElementById("awards-content");
-    displayAndBackground(this, current);
+    current.style.display = "block";
+    this.classList.toggle("active");
 });
 
 certs.addEventListener("click", function () {
     hideAll();
     var current = d.getElementById("certifications-content");
-    displayAndBackground(this, current);
+    current.style.display = "block";
+    this.classList.toggle("active");
 });
