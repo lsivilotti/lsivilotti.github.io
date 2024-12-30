@@ -4,6 +4,7 @@
     --accent-color: #FF7D00;
     --bg-color: #FFECD1;
     --text-color: #001524;
+    --head-color:var(--bg-color)
 }
 
 body {
@@ -16,10 +17,6 @@ body {
 
 button {
     cursor: pointer;
-}
-
-header {
-    background-color: var(--primary-color);
 }
 
 header h1 {

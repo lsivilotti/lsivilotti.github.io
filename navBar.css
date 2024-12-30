@@ -1,32 +1,13 @@
-/* :root {
-    --primary-color: #847577;
-    --second-color: #8D909B;
-    --accent-color: #33AAFF;
-    --bg-color: #B8BDB3;
-    --text-color: #222618;
-} */
-/* :root {
-    --primary-color: #881D1B;
-    --second-color: #B68554;
-    --accent-color: #6AC8C8;
-    --bg-color: #F1D9D0;
-    --text-color: #1F322B;
-} */
-/* :root {
-    --primary-color: rgb(100, 30, 25);
-    --second-color: rgb(57, 67, 26);
-    --accent-color: rgb(200, 80, 40);
-    --bg-color: rgb(209, 182, 170);
-    --text-color: rgb(0, 0, 0);
-    --head-color: rgb(251, 190, 225);
-} */
 :root {
-    --primary-color: #9a0917;
-    --second-color: #3e114d;
-    --accent-color: #E59500;
+    --primary-color: #78290F;
+    --second-color: #15616D;
+    --accent-color: #FF7D00;
     --bg-color: #FFECD1;
-    --text-color: #02040F;
-    --head-color: #20c5e6;
+    --text-color: #001524;
+}
+
+header {
+    background-color: var(--primary-color);
 }
 
 .site-nav-div {
