@@ -4,7 +4,7 @@
     --accent-color: #FF7D00;
     --bg-color: #FFECD1;
     --text-color: #001524;
-    --head-color:var(--bg-color)
+    --head-color: var(--bg-color)
 }
 
 body {
@@ -19,60 +19,42 @@ button {
     cursor: pointer;
 }
 
-header h1 {
-    text-align: center;
-    /* color: var(--text-color); */
-    color: var(--head-color);
-}
-
 #home-content {
-    /* width: 100%; */
-    /* display: block; */
     align-content: center;
     padding: 5%;
 }
 
 #experience-content {
-    /* width: 100%; */
-    /* display: none; */
     align-content: center;
     padding: 5%;
 }
 
 #education-content {
-    /* width: 100%; */
-    /* display: none; */
     align-content: center;
     padding: 5%;
 }
 
 #projects-content {
-    /* width: 100%; */
-    /* display: none; */
     align-content: center;
     padding: 5%;
 }
 
 #awards-content {
-    /* width: 100%; */
-    /* display: none; */
     align-content: center;
     padding: 5%;
 }
 
 #certifications-content {
-    /* width: 100%; */
-    /* display: none; */
     align-content: center;
     padding: 5%;
 }
 
 .contents p {
-    margin: 5px 0;
+    margin: 0;
+    margin-inline: 10%;
 }
 
 .greeting {
-    /* padding: 2%; */
     text-align: justify;
 }
 
@@ -85,6 +67,7 @@ header h1 {
 .personal-pic {
     width: 100%;
     min-width: 50px;
+    border-radius: 20px;
 }
 
 footer {
