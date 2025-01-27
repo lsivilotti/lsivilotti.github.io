@@ -15,36 +15,23 @@ body {
     margin: 0;
 }
 
+header {
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    align-content: center;
+}
+
 button {
     cursor: pointer;
 }
 
 #home-content {
     align-content: center;
-    padding: 5%;
-}
-
-#experience-content {
-    align-content: center;
-    padding: 5%;
-}
-
-#education-content {
-    align-content: center;
-    padding: 5%;
+    padding: 20px;
 }
 
 #projects-content {
-    align-content: center;
-    padding: 5%;
-}
-
-#awards-content {
-    align-content: center;
-    padding: 5%;
-}
-
-#certifications-content {
     align-content: center;
     padding: 5%;
 }
