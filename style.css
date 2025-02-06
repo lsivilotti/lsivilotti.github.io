@@ -2,11 +2,12 @@
     --primary-color: #78290F;
     --second-color: #15616D;
     --accent-color: #FF7D00;
-    --bg-color: #FFECD1;
+    --bg-color: #ffecd1;
+    --bg-subset:#ffffff7f;
     --text-color: #001524;
     --head-color: var(--bg-color)
 }
-
+/* On all pages */
 body {
     background-attachment: fixed;
     background: var(--bg-color);
@@ -22,27 +23,23 @@ header {
     align-content: center;
 }
 
-button {
-    cursor: pointer;
-}
-
-#home-content {
-    align-content: center;
-    padding: 20px;
-}
-
-#projects-content {
-    align-content: center;
-    padding: 5%;
-}
-
 .contents p {
     margin: 0;
     margin-inline: 10%;
 }
 
-.greeting {
-    text-align: justify;
+footer {
+    padding: 10px;
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+/* Home Page –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#home-content {
+    align-content: center;
+    padding: 20px;
 }
 
 .personal-pic-div {
@@ -55,12 +52,59 @@ button {
     width: 100%;
     min-width: 50px;
     border-radius: 20px;
+}        
+
+.greeting {
+    text-align: justify;
+}    
+
+/* Project Page ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#projects-content {
+    margin: 0 5%;
 }
 
-footer {
-    padding: 10px;
+.project {
+    font-size: larger;
+    background-color: var(--bg-subset);
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px var(--accent-color);
+    margin: 20px 0;
 }
 
-footer a {
-    color: var(--accent-color);
+.open-close {
+    float: right;
+}
+
+.open-close button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.imageDescrip {
+    width: 100%;
+    display: flex;
+}
+
+.projectImage {
+    width: 25%;
+    margin: 0 10px;
+    min-width: 100px;
+    max-width: 400px;
+}
+
+.projectImage img {
+    width: 100%;
+    border-radius: 10px;
+    float: left;
+}
+
+.shortDescription {
+    width: 75%;
+    min-width: 96px;
+}
+
+.shortDescription p {
+    margin: 0 1em;
 }
