@@ -66,109 +66,154 @@
     </header>
     <div id="projects-content" class="contents">
         <h1>Projects</h1>
-        <h3>School</h3>
-        <div class="project" id="IA">
-            <div class="open-close"><button id="IAButton" onclick="IADescriptionToggle()">
-                    <h1>+</h1>
+        <div class="projectSection">
+            <h2 class="sectionTitle">School</h2>
+            <div class="open-close" class="sectionButton"><button id="SchoolButton" onclick="SchoolToggle()">
+                    <h1>–</h1>
                 </button></div>
-            <h3>IB Computer Science IA</h3>
-            <div class="imageDescrip">
-                <div class="projectImage"><a href="https://github.com/lsivilotti/Sivilotti" target="_blank"><img
-                            src="IAImage.png" alt="IAImage"></a></div>
-                <div class="shortDescription">
-                    <p>Organization: IB Computer Science, Upper Arlington High School</p>
-                    <br>
-                    <p>Language: Java</p>
-                    <br>
-                    <p>The objective of the IA was to design, implement, and document an algorithm for a client. My
-                        client was looking for a way in which to accurately and quickly determine whether a series of
-                        rectangular designs could be fit on a printing sheet and leave the sheet able to be guillotine
-                        cut.</p>
-                    <div class="longDescription" id="IALongDescription">
-                        <hr>
-                        <p>
-                            As head of the Chroma Department of Art Brands––a company that prints designs on to
-                            fabrics––my client needed a way in which they and their employees could easily and quickly
-                            estimate whether a series of designs could fit on a printing sheet, beyond solely
-                            calculating and comparing the areas. My algorithm utilizes the guillotine cut requirement to
-                            simplify the solution. Guillotine cuts by nature are recursive, cutting across the entirety
-                            of the sheet. Following this process when a design gets placed on a sheet, the design is
-                            "cut" out using guillotine cuts, creating two smaller sheets in the process. This recursion
-                            continues until all designs are placed on a sheet, in which case they fit, or there is no
-                            sheet that fits at least one of the designs.
-                        </p>
+        </div>
+        <div id="SchoolProjects">
+            <div class="project" id="IA">
+                <div class="open-close"><button id="IAButton" onclick="IADescriptionToggle()">
+                        <h1>+</h1>
+                    </button></div>
+                <h3>IB Computer Science IA</h3>
+                <div class="imageDescrip">
+                    <div class="projectImage"><a href="https://github.com/lsivilotti/Sivilotti" target="_blank"><img
+                                src="IAImage.png" alt="IAImage"></a></div>
+                    <div class="shortDescription">
+                        <p>Organization: IB Computer Science, Upper Arlington High School</p>
+                        <br>
+                        <p>Language: Java</p>
+                        <br>
+                        <p>The objective of the IA was to design, implement, and document an algorithm for a client. My
+                            client was looking for a way in which to accurately and quickly determine whether a series
+                            of
+                            rectangular designs could be fit on a printing sheet and leave the sheet able to be
+                            guillotine
+                            cut.</p>
+                        <div class="longDescription" id="IALongDescription">
+                            <hr>
+                            <p>
+                                As head of the Chroma Department of Art Brands––a company that prints designs on to
+                                fabrics––my client needed a way in which they and their employees could easily and
+                                quickly
+                                estimate whether a series of designs could fit on a printing sheet, beyond solely
+                                calculating and comparing the areas. My algorithm utilizes the guillotine cut
+                                requirement to
+                                simplify the solution. Guillotine cuts by nature are recursive, cutting across the
+                                entirety
+                                of the sheet. Following this process when a design gets placed on a sheet, the design is
+                                "cut" out using guillotine cuts, creating two smaller sheets in the process. This
+                                recursion
+                                continues until all designs are placed on a sheet, in which case they fit, or there is
+                                no
+                                sheet that fits at least one of the designs.
+                            </p>
+                            <br>
+                            <p>
+                                The process can be conceptualized in terms of a tree where each node is placing a design
+                                on
+                                a sheet. This tree grows very large very quickly, so some heuristics were applied to
+                                choosing designs and the order of the designs preventing the algorithm from checking
+                                every
+                                branch of the tree.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="projectSection">
+            <h2 class="sectionTitle">Personal</h2>
+            <div class="open-close" class="sectionButton"><button id="PersonalButton" onclick="PersonalToggle()">
+                    <h1>–</h1>
+                </button></div>
+        </div>
+        <div id="PersonalProjects">
+            <div class="project" id="DiceGame">
+                <div class="open-close"><button id="DiceButton" onclick="DiceDescriptionToggle()">
+                        <h1>+</h1>
+                    </button></div>
+                <h3>Dice Game</h3>
+                <div class="imageDescrip">
+                    <div class="projectImage"><a href="https://github.com/lsivilotti/Dice" target="_blank"><img
+                                src="DiceGame.png" alt="Project Image"></a></div>
+                    <div class="shortDescription">
+                        <p>Organization: Personal</p>
+                        <br>
+                        <p>Language: Java</p>
                         <br>
                         <p>
-                            The process can be conceptualized in terms of a tree where each node is placing a design on
-                            a sheet. This tree grows very large very quickly, so some heuristics were applied to
-                            choosing designs and the order of the designs preventing the algorithm from checking every
-                            branch of the tree.
+                            A game created for the stats nerds.
                         </p>
+                        <div class="longDescription" id="DiceLongDescription">
+                            <hr>
+                            <p>
+                                Rules of the game are: you (the player) have 6 types of dice––4-sided, 6-sided, 8-sided,
+                                10-sided, 12-sided, and 20-sided. If the dice rolls a 1 it is removed from the play,
+                                however
+                                if it rolls the maximum number possible for that type of die then another die of that
+                                type
+                                is added. The goal is to guess which which type will be the last one standing.
+                            </p>
+                            <br>
+                            <p>
+                                This project is a simulation of this game, created orignally to analyze the probabilites
+                                of
+                                each type winning. However there are several more intriguing statistics that can be
+                                gleaned
+                                from the game. The chance of ties, average length of games, and average number of rounds
+                                each type took to win are examples of statistics I used data from the simulation for.
+                                These
+                                statistics also change when the amount of each type of die at the beginning is changed.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h3>Personal</h3>
-        <div class="project" id="DiceGame">
-            <div class="open-close"><button id="DiceButton" onclick="DiceDescriptionToggle()">
-                    <h1>+</h1>
-                </button></div>
-            <h3>Dice Game</h3>
-            <div class="imageDescrip">
-                <div class="projectImage"><a href="https://github.com/lsivilotti/Dice" target="_blank"><img
-                            src="DiceGame.png" alt="Project Image"></a></div>
-                <div class="shortDescription">
-                    <p>Organization: Personal</p>
-                    <br>
-                    <p>Language: Java</p>
-                    <br>
-                    <p>
-                        A game created for the stats nerds.
-                    </p>
-                    <div class="longDescription" id="DiceLongDescription">
-                        <hr>
-                        <p>
-                            Rules of the game are: you (the player) have 6 types of dice––4-sided, 6-sided, 8-sided,
-                            10-sided, 12-sided, and 20-sided. If the dice rolls a 1 it is removed from the play, however
-                            if it rolls the maximum number possible for that type of die then another die of that type
-                            is added. The goal is to guess which which type will be the last one standing.
-                        </p>
-                        <br>
-                        <p>
-                            This project is a simulation of this game, created orignally to analyze the probabilites of
-                            each type winning. However there are several more intriguing statistics that can be gleaned
-                            from the game. The chance of ties, average length of games, and average number of rounds
-                            each type took to win are examples of statistics I used data from the simulation for. These
-                            statistics also change when the amount of each type of die at the beginning is changed.
-                        </p>
+        <hr>
+
+        <template>
+            <div class="projectSection">
+                <h2 class="sectionTitle">Template</h2>
+                <div class="open-close" class="sectionButton"><button id="XXButton" onclick="XXToggle()">
+                        <h1>–</h1>
+                    </button></div>
+            </div>
+            <div id="XXProjects">
+                <div class="project">
+                    <div class="open-close"><button id="XXButton" onclick="XXDescriptionToggle()">
+                            <h1>+</h1>
+                        </button></div>
+                    <h3>Project</h3>
+                    <div class="imageDescrip">
+                        <div class="projectImage"><a href="#XXButton" target="_blank"><img src=""
+                                    alt="Project Image"></a>
+                        </div>
+                        <div class="shortDescription">
+                            <p>Organization: </p>
+                            <br>
+                            <p>Language: </p>
+                            <br>
+                            <p>
+                                Short description of the project.
+                            </p>
+                            <div class="longDescription" id="XXLongDescription">
+                                <hr>
+                                <p>
+                                    Detailed description.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="project">
-            <div class="open-close"><button id="XXButton" onclick="XXDescriptionToggle()">
-                    <h1>+</h1>
-                </button></div>
-            <h3>Project</h3>
-            <div class="imageDescrip">
-                <div class="projectImage"><a href="#XXButton" target="_blank"><img src="" alt="Project Image"></a></div>
-                <div class="shortDescription">
-                    <p>Organization: </p>
-                    <br>
-                    <p>Language: </p>
-                    <br>
-                    <p>
-                        Short description of the project.
-                    </p>
-                    <div class="longDescription" id="XXLongDescription">
-                        <hr>
-                        <p>
-                            Detailed description.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <hr>
+        </template>
     </div>
 
     <script>
@@ -185,8 +230,16 @@
             }
         }
 
-        function XXDescriptionToggle() {
-            toggleDescription("XXLongDescription", "XXButton");
+        function SchoolToggle() {
+            toggleDescription("SchoolProjects", "SchoolButton");
+        }
+
+        function PersonalToggle() {
+            toggleDescription("PersonalProjects", "PersonalButton");
+        }
+
+        function XXToggle() {
+            toggleDescription("XXProjects", "XXButton");
         }
 
         function IADescriptionToggle() {
@@ -195,6 +248,10 @@
 
         function DiceDescriptionToggle() {
             toggleDescription("DiceLongDescription", "DiceButton");
+        }
+
+        function XXDescriptionToggle() {
+            toggleDescription("XXLongDescription", "XXButton");
         }
     </script>
 
