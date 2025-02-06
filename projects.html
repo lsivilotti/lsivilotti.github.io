@@ -66,7 +66,8 @@
     </header>
     <div id="projects-content" class="contents">
         <h1>Projects</h1>
-        <div class="project">
+        <h3>School</h3>
+        <div class="project" id="IA">
             <div class="open-close"><button id="IAButton" onclick="IADescriptionToggle()">
                     <h1>+</h1>
                 </button></div>
@@ -107,14 +108,55 @@
                 </div>
             </div>
         </div>
+        <h3>Personal</h3>
+        <div class="project" id="DiceGame">
+            <div class="open-close"><button id="DiceButton" onclick="DiceDescriptionToggle()">
+                    <h1>+</h1>
+                </button></div>
+            <h3>Dice Game</h3>
+            <div class="imageDescrip">
+                <div class="projectImage"><a href="https://github.com/lsivilotti/Dice" target="_blank"><img
+                            src="DiceGame.png" alt="Project Image"></a></div>
+                <div class="shortDescription">
+                    <p>Organization: Personal</p>
+                    <br>
+                    <p>Language: Java</p>
+                    <br>
+                    <p>
+                        A game created for the stats nerds.
+                    </p>
+                    <div class="longDescription" id="DiceLongDescription">
+                        <hr>
+                        <p>
+                            Rules of the game are: you (the player) have 6 types of dice––4-sided, 6-sided, 8-sided,
+                            10-sided, 12-sided, and 20-sided. If the dice rolls a 1 it is removed from the play, however
+                            if it rolls the maximum number possible for that type of die then another die of that type
+                            is added. The goal is to guess which which type will be the last one standing.
+                        </p>
+                        <br>
+                        <p>
+                            This project is a simulation of this game, created orignally to analyze the probabilites of
+                            each type winning. However there are several more intriguing statistics that can be gleaned
+                            from the game. The chance of ties, average length of games, and average number of rounds
+                            each type took to win are examples of statistics I used data from the simulation for. These
+                            statistics also change when the amount of each type of die at the beginning is changed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="project">
             <div class="open-close"><button id="XXButton" onclick="XXDescriptionToggle()">
                     <h1>+</h1>
                 </button></div>
-            <h3>Project 1</h3>
+            <h3>Project</h3>
             <div class="imageDescrip">
-                <div class="projectImage"><img src="" alt="Project Image"></div>
+                <div class="projectImage"><a href="#XXButton" target="_blank"><img src="" alt="Project Image"></a></div>
                 <div class="shortDescription">
+                    <p>Organization: </p>
+                    <br>
+                    <p>Language: </p>
+                    <br>
                     <p>
                         Short description of the project.
                     </p>
@@ -149,6 +191,10 @@
 
         function IADescriptionToggle() {
             toggleDescription("IALongDescription", "IAButton");
+        }
+
+        function DiceDescriptionToggle() {
+            toggleDescription("DiceLongDescription", "DiceButton");
         }
     </script>
 
