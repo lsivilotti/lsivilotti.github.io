@@ -108,3 +108,7 @@ footer a {
 .shortDescription p {
     margin: 0 1em;
 }
+
+.longDescription {
+    display: none;
+}

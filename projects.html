@@ -67,7 +67,7 @@
     <div id="projects-content" class="contents">
         <h1>Projects</h1>
         <div class="project">
-            <div class="open-close"><button>
+            <div class="open-close"><button id="IAButton" onclick="IADescriptionToggle()">
                     <h1>+</h1>
                 </button></div>
             <h3>IB Computer Science IA</h3>
@@ -76,16 +76,39 @@
                             src="IAImage.png" alt="IAImage"></a></div>
                 <div class="shortDescription">
                     <p>Organization: IB Computer Science, Upper Arlington High School</p>
+                    <br>
                     <p>Language: Java</p>
+                    <br>
                     <p>The objective of the IA was to design, implement, and document an algorithm for a client. My
                         client was looking for a way in which to accurately and quickly determine whether a series of
                         rectangular designs could be fit on a printing sheet and leave the sheet able to be guillotine
                         cut.</p>
+                    <div class="longDescription" id="IALongDescription">
+                        <hr>
+                        <p>
+                            As head of the Chroma Department of Art Brands––a company that prints designs on to
+                            fabrics––my client needed a way in which they and their employees could easily and quickly
+                            estimate whether a series of designs could fit on a printing sheet, beyond solely
+                            calculating and comparing the areas. My algorithm utilizes the guillotine cut requirement to
+                            simplify the solution. Guillotine cuts by nature are recursive, cutting across the entirety
+                            of the sheet. Following this process when a design gets placed on a sheet, the design is
+                            "cut" out using guillotine cuts, creating two smaller sheets in the process. This recursion
+                            continues until all designs are placed on a sheet, in which case they fit, or there is no
+                            sheet that fits at least one of the designs.
+                        </p>
+                        <br>
+                        <p>
+                            The process can be conceptualized in terms of a tree where each node is placing a design on
+                            a sheet. This tree grows very large very quickly, so some heuristics were applied to
+                            choosing designs and the order of the designs preventing the algorithm from checking every
+                            branch of the tree.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="project">
-            <div class="open-close"><button>
+            <div class="open-close"><button id="XXButton" onclick="XXDescriptionToggle()">
                     <h1>+</h1>
                 </button></div>
             <h3>Project 1</h3>
@@ -95,10 +118,40 @@
                     <p>
                         Short description of the project.
                     </p>
+                    <div class="longDescription" id="XXLongDescription">
+                        <hr>
+                        <p>
+                            Detailed description.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleDescription(elementID, buttonID) {
+            var element = document.getElementById(elementID);
+            var button = document.getElementById(buttonID)
+            var showing = getComputedStyle(element).display;
+            if (showing !== "none") {
+                element.style.display = "none";
+                button.innerHTML = "<h1>+</h1>"
+            } else {
+                element.style.display = "block";
+                button.innerHTML = "<h1>–</h1>"
+            }
+        }
+
+        function XXDescriptionToggle() {
+            toggleDescription("XXLongDescription", "XXButton");
+        }
+
+        function IADescriptionToggle() {
+            toggleDescription("IALongDescription", "IAButton");
+        }
+    </script>
+
     <footer>
         <div class="footer">
             <small>
