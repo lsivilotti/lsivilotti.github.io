@@ -43,21 +43,32 @@ footer a {
     padding: 20px;
 }
 
+.introduction {
+    display: flex;
+}
+
 .personal-pic-div {
+    display: flex;
     width: 25%;
+    min-width: 100px;
     float: left;
-    padding: 0 2% 0 0;
 }
 
 .personal-pic {
     width: 100%;
-    min-width: 50px;
     border-radius: 20px;
 }        
 
 .greeting {
-    text-align: justify;
-}    
+    padding: 2%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: larger;
+}
+
+.greeting p {
+    margin: auto;
+}
 
 /* Project Page ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 #projects-content {
