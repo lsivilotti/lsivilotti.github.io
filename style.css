@@ -40,7 +40,7 @@ footer a {
 /* Home Page –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 #home-content {
     align-content: center;
-    padding: 20px;
+    padding: 20px 5%;
 }
 
 .introduction {
@@ -122,6 +122,7 @@ hr {
     width: 100%;
     border-radius: 10px;
     float: left;
+    box-shadow: 0px 0px 10px -5px var(--text-color);
 }
 
 .shortDescription {

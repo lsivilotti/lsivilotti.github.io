@@ -3,7 +3,7 @@
     --second-color: #15616D;
     --accent-color: #FF7D00;
     --bg-color: #ffecd1;
-    --bg-subset:#ffffff7f;
+    --bg-subset: #ffffff7f;
     --text-color: #001524;
     --head-color: var(--bg-color)
 }
@@ -16,7 +16,12 @@
 
 }
 
+.mainPage a {
+    text-decoration: none;
+}
+
 .mainPage h2 {
+    width: 100%;
     text-align: center;
     color: var(--head-color);
     overflow: visible;
@@ -26,6 +31,10 @@
     float: left;
     padding-inline: 5px;
     margin-left: 5%;
+}
+
+.mainPage:hover h2{
+    text-shadow: 0 0 5px var(--accent-color);
 }
 
 .nav-div {
