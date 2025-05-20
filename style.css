@@ -3,10 +3,11 @@
     --second-color: #15616D;
     --accent-color: #FF7D00;
     --bg-color: #ffecd1;
-    --bg-subset:#ffffff7f;
+    --bg-subset: #ffffff7f;
     --text-color: #001524;
     --head-color: var(--bg-color)
 }
+
 /* On all pages */
 body {
     background-attachment: fixed;
@@ -57,7 +58,7 @@ footer a {
 .personal-pic {
     width: 100%;
     border-radius: 20px;
-}        
+}
 
 .greeting {
     padding: 2%;
@@ -74,10 +75,11 @@ footer a {
     .introduction {
         flex-direction: column;
     }
+
     .personal-pic-div {
         width: 50%;
     }
-    
+
 }
 
 /* Project Page ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -155,5 +157,5 @@ hr {
     .imageDescrip {
         flex-direction: column;
     }
-    
+
 }
