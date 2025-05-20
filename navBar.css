@@ -13,7 +13,7 @@
     align-content: center;
     background-color: var(--primary-color);
     overflow: visible;
-
+    display: flex;
 }
 
 .mainPage a {
@@ -95,13 +95,18 @@
     padding: 0;
 }
 
+#social-lis {
+    display: flex block;
+    flex-direction: row;
+}
+
 .social-nav-bar li {
     border-radius: 30px;
-    display: list-item;
-    float: right;
+    /* display: list-item; */
+    /* float: right; */
     text-align: center;
     background: inherit;
-    padding-inline: 10%;
+    margin-inline: auto;
 }
 
 .social-nav-bar li:hover {
@@ -110,6 +115,11 @@
 
 .social-nav-bar a {
     text-decoration: none;
+}
+
+#social-lis img {
+    width: 30px;
+    padding: 10px;
 }
 
 #github img {
@@ -122,4 +132,17 @@
 
 #email img {
     width: 30px;
+}
+
+@media screen and (max-width: 345px) {
+    #social-lis {
+        flex-direction: column;
+    }
+
+    #social-lis img {
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
 }
