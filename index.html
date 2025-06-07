@@ -8,6 +8,47 @@
     <title>Luca Sivilotti</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="navBar.css" type="text/css">
+    <style>
+        .exper-info {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .exper-info-header {
+            display: flex;
+        }
+
+        .exper-info-header>p {
+            margin: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+        }
+
+        .exper-info-header>h3 {
+            margin: .5em 0;
+        }
+
+        .exper-info-body>h4 {
+            margin: 0.5em 0;
+        }
+
+        .exper-info-body li {
+            list-style-type: none;
+        }
+
+        @media screen and (max-width: 800px) {
+            .exper-info-header {
+                flex-direction: column;
+            }
+
+            .exper-info-header>p {
+                margin: 0;
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -65,9 +106,13 @@
     </header>
 
     <div id="home-content" class="contents">
-        <div class="introduction">
+        <div id="introduction">
             <div class="personal-pic-div">
-                <img class="personal-pic" src="1_crop_4x6.png" alt="Luca Sivilotti Picutre">
+                <picture>
+                    <source media="(max-width: 1000px)" srcset="1_v2_crop_8x10.png">
+                    <!-- <source media="(min-width: 600px)" srcset="img-medium.jpg"> -->
+                    <img class="personal-pic" src="1_crop_4x6.png" alt="Luca Sivilotti Headshot">
+                </picture>
             </div>
             <div class="greeting">
                 <h1>Hi, I'm Luca Sivilotti</h1>
@@ -76,12 +121,87 @@
                 </p>
             </div>
         </div>
+        <hr>
+        <div id="experience">
+            <section class="title">
+                <h2>Work Experience</h2>
+            </section>
+            <template>
+                <div class="exper-info">
+                    <section class="exper-info-header">
+                        <h3>Position</h3>
+                        <p>(Start date –– End date)</p>
+                    </section>
+                    <section class="exper-info-body">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>
+                                Description
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </template>
+            <div class="exper-info">
+                <section class="exper-info-header">
+                    <h3>Tennis Court Supervisor at Northam Park Tennis Courts</h3>
+                    <p>(June 2023 –– August 2024)</p>
+                </section>
+                <section class="exper-info-body">
+                    <h4>City of Upper Arlington, Upper Arlington, OH</h4>
+                    <ul>
+                        <li>
+                            Directed tennis court workers in clay tennis court maintenance, opened and closed facilities
+                            in addition to the responsibilities of a court worker
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="exper-info">
+                <section class="exper-info-header">
+                    <h3>Tennis Court Worker at Northam Park Tennis Courts</h3>
+                    <p>(May 2023 –– June 2023)</p>
+                </section>
+                <section class="exper-info-body">
+                    <h4>City of Upper Arlington, Upper Arlington, OH</h4>
+                    <ul>
+                        <li>
+                            Signed patrons in, took court reservations for patrons, maintained cleanliness of the
+                            facilities
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="exper-info">
+                <section class="exper-info-header">
+                    <h3>Northwest Kiwanis Youth Soccer Referee</h3>
+                    <p>(September 2021 –– November 2022)</p>
+                </section>
+                <section class="exper-info-body">
+                    <h4>Northwest Kiwanis, Columbus, OH</h4>
+                    <ul>
+                        <li>
+                            Regulated and enforced rules of a youth soccer league, dealt with coaches and parents and
+                            ensured a safe and fun environment for children to play soccer
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <hr>
+        <div id="qualifications">
+            <section class="title">
+                <h2>Qualifications</h2>
+            </section>
+
+        </div>
+        <div id="awards"></div>
     </div>
 
     <footer>
         <div class="footer">
             <small>
-                <p>Contact</p>
+                <p><b>Contact</b></p>
                 <ul>
                     <li id="mail">Email: <a href="mailto:luca.sivilotti@gmail.com">luca.sivilottiatgmail.com</a></li>
                     <li id="link">LinkedIn: <a href="https://www.linkedin.com/in/luca-sivilotti-b73983342"
